@@ -62,9 +62,9 @@ A `LeaseContract` is created by passing the following attributes:
 
 The `total_value()` of a `LeaseContract` will be computed in this way: `vehicle.sale_price() + (lease_multiplier) - (discount if employee) * `. In this case `lease_multiplier` depends on the vehicle and is computed in the following way:
 
-* `Car`: `sale_price() + (sale_price() * 1.2 / length_in_months)`.
-* `Motorcycle`: `sale_price() + (sale_price() * 1 / length_in_months)`
-* `Truck`: `sale_price() + (sale_price() * 1.7 / length_in_months)`
+* `Car`: `sale_price() * 1.2 / length_in_months`.
+* `Motorcycle`: `sale_price() * 1 / length_in_months`
+* `Truck`: `sale_price() * 1.7 / length_in_months`
 
 The `monthly_value` of the contract will be just the total value divided by the amount of months: `total_value() / length_in_months`.
 
