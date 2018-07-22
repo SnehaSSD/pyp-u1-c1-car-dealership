@@ -11,17 +11,23 @@ class Vehicle(object):
     
     def purchase_price(self):
        return (self.sale_price() - (self.PURCHASE_PRICE_MULTIPLIER * self.miles))
-
-
+      
 class Car(Vehicle):
       SALE_PRICE_MULTIPLIER = 1.2
       PURCHASE_PRICE_MULTIPLIER = 0.004
+      INTREST_RATE = 1.07
+      LEASE_MUTIPLIER = 1.2
 
 class Motorcycle(Vehicle):
       SALE_PRICE_MULTIPLIER = 1.1
       PURCHASE_PRICE_MULTIPLIER = 0.009
-
+      INTREST_RATE = 1.03
+      LEASE_MUTIPLIER = 1
 
 class Truck(Vehicle):
       SALE_PRICE_MULTIPLIER = 1.6
       PURCHASE_PRICE_MULTIPLIER = 0.02
+      INTREST_RATE = 1.11
+      LEASE_MUTIPLIER = 1.7
+
+

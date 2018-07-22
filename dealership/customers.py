@@ -6,14 +6,13 @@ class Person(object):
   
 
 class Customer(Person):
-  pass
     
   def is_employee(self):
     return False
 
 
 class Employee(Person):
-   DISCOUNT = 10
+  DISCOUNT = 0.10
     
   def is_employee(self):
      return True
